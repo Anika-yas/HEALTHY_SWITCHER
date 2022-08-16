@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20220801170516">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220816125143">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,30 +20,29 @@
 					<img src="img/icons/logo.svg" alt="logotype" class="logo__img">
 				</a>
 
-				<div class="header__menu">
-					<div class="icon-menu"><span></span></div>
-
-					<nav class="menu">
+				<div class="header__menu menu">
+					<div class="icon-menu">
+						<span></span>
+					</div>
+					<nav class="menu__body">
 						<ul class="menu__list">
 							<li class="menu__item">
-								<a href="#menu" class="menu__link">Menu</a>
+								<a href="#" data-goto=".about" class="menu__link">Menu</a>
 							</li>
 							<li class="menu__item">
-								<a href="#recipes-link" class="menu__link">Recipes</a>
+								<a data-goto="#recipes-link" href="#" class="menu__link">Recipes</a>
 							</li>
 							<li class="menu__item">
-								<a href="#shefs-link" class="menu__link">Chefs</a>
+								<a data-goto="#shefs-link" href="#" class="menu__link">Chefs</a>
 							</li>
 							<li class="menu__item">
-								<a href="#contacts" class="menu__link">Contacts</a>
+								<a data-goto="#contacts" href="#" class="menu__link">Contacts</a>
 							</li>
 						</ul>
 					</nav>
 				</div>
 			</div>
 		</header>
-
-
 		<main class="main">
 			<div class="favourite-food">
 				<div class="favourite-food__container">
@@ -85,7 +84,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="about" id="menu">
+			<section class="about" data-watch="navigator">
 				<div class="about__container">
 					<div class="about__head head-work">
 						<h2 class="head-work__title">about</h2>
@@ -120,7 +119,16 @@
 									</div>
 								</div>
 							</div>
+
+							<!-- Если нужна пагинация
+                <div class="swiper-pagination"></div>
+
+                <button type="button" class="swiper-button-prev"></button>
+                <button type="button" class="swiper-button-next"></button>
+            -->
 						</div>
+
+						<!-- Если нужна навигация (влево/вправо) -->
 						<button type="button" class="swiper-button-prev">
 							<img src="img/icons/about/arrow-left.svg" class="swiper-button-prev-img" alt="">
 						</button>
@@ -130,8 +138,9 @@
 						<div class="swiper-pagination"></div>
 
 					</div>
+
 				</div>
-			</div>
+			</section>
 
 
 			<div class="work">
@@ -399,7 +408,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="shefs" id="shefs-link">
+			<div class="shefs" id="shefs-link" data-watch="navigator">
 				<div class="shefs__container">
 					<div class="shefs__head head-work">
 						<h2 class="head-work__title">shefs</h2>
@@ -466,7 +475,7 @@
 
 
 			</div>
-			<div class="recipes" id="recipes-link">
+			<div class="recipes" id="recipes-link" data-watch="navigator">
 				<div class="recipes__container">
 					<div class="recipes__head head-work">
 						<h2 class="head-work__title">RECIPES</h2>
@@ -623,7 +632,7 @@
 				</div>
 			</div>
 		</main>
-		<footer class="footer" id="contacts">
+		<footer class="footer" id="contacts" data-watch="navigator">
 			<div class="footer__top">
 				<div class="footer__container">
 					<div class="footer__items">
@@ -677,7 +686,7 @@
 </div>
  -->
 
-	<script src="js/app.min.js?_v=20220801170516"></script>
+	<script src="js/app.min.js?_v=20220816125143"></script>
 </body>
 
 </html>
