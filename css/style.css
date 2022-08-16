@@ -651,6 +651,10 @@ body._lock {
   background: #34C759;
 }
 
+.swiper-pagination-bullet-active {
+  background: #34C759;
+}
+
 .work__container {
   padding: 105px 15px 30px;
   display: -webkit-box;
